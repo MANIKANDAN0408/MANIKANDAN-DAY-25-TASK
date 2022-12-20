@@ -1,0 +1,126 @@
+
+.title {
+  color: hsl(232deg 8% 38%);
+  font-weight: 400;
+}
+
+
+.status-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 31px 21px;
+}
+
+
+body {
+  background-color: hsl(225deg 11% 93%);
+}
+
+
+.card-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+:root {
+  --cardBlue: hsl(226deg 69% 59%);
+  --cardGreen: hsl(150deg 75% 45%);
+  --cardSkyBlue: hsl(189deg 60% 51%);
+  --cardYellow: hsl(45deg 91% 60%);
+  --cardValueClr: hsl(230deg 8% 38%);
+  --cardIconClr: hsl(230deg 26% 89%);
+  --cardHeadBgClr: hsl(227deg 40% 98%);
+  --projectRed: hsl(7deg 78% 57%);
+}
+
+
+@media (min-width: 500px) {
+  .card-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1120px) {
+  .card-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.App {
+  font-family: Roboto;
+  margin: 10px;
+}
+
+
+.card-value {
+  color: var(--cardValueClr);
+  margin: 5px 0px 0px 0px;
+  font-weight: 500;
+}
+
+
+.card-icon {
+  color: var(--cardIconClr);
+  font-size: 30px;
+  margin: 0;
+}
+
+
+.overview-chart {
+  margin-top: 25px;
+  padding-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.904);
+}
+
+
+.overview-head,
+
+.project-head {
+  color: var(--cardBlue);
+  background-color: var(--cardHeadBgClr);
+  margin: 0;
+  padding: 0.5px 20px;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+
+.project-contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: small;
+  font-weight: 500;
+  color: hsl(233deg 7% 55%);
+  padding: 0rem 1.25rem 0rem 1.25rem;
+}
+
+
+.projects-list {
+  background-color: white;
+  margin-top: 24px;
+  padding-bottom: 1.25rem;
+}
+
+
+.colorCard {
+  padding: 0rem 1.25rem 0rem 1.25rem;
+}
+
+
+.clrCardsValue {
+  font-size: small;
+  font-weight: 500;
+  color: hsl(233deg 8% 78%);
+  margin-top: 0;
+}
+
+
+.colorCardList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-top: 25px;
+}
